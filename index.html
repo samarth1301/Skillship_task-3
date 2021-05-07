@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .checkbox{
+            justify-content: center;
+            display: flex;
+            margin-right: 7%;
+        }
+        .brochure{
+            justify-content: center;
+            display: flex;
+            margin-right: 19.5%;
+        }
+        .radio-buttons{
+            margin-right: 12%;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(204, 203, 203);">
+    <h1 style="background-color: rgb(185, 185, 185);text-align: center; justify-content: space-around;">
+        The World of fruit</h1>
+    <h2 style="text-align: center;">Fruit survey</h2><hr>
+    <form action="">
+    <div class="form-container"></div>
+    <p style="text-align: center; margin-right: 5em;">Name <input type="text" name="Name" id="Name"></p>
+    <p style="text-align: center; margin-right: 6em;">Address <input type="text" name="Address" id="Address"></p>
+    <p style="text-align: center; margin-right: 5.5em;">E-mail <input type="text" name="E-mail" id="E-mail"></p>
+    <div class="checkbox">
+    <p style="text-align: right; ">How many pieces of fruit <br> do you eat in a day? 
+    </p>
+    <div class="radio-buttons">
+    <p><input type="radio" name="fruit" id="0">0</p>
+    <p> <input type="radio" name="fruit" id="1">1</p>
+    <p><input type="radio" name="fruit" id="2">2</p>
+    <p><input type="radio" name="fruit" id="more than 2">more than 2</p>
+    </div>
+    </div>
+    <p style="text-align: center; justify-content: center; margin-right: 12%; display: flex;">
+        My favourite fruit : &nbsp;
+        <input class="box" list="Fruit">
+        <datalist id="Fruit">
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Pomegranate">Pomegranate</option>
+        <option value="Pear">Pear</option>
+        <option value="Watermelon">Watermelon</option>
+        <option value="Plum">Plum</option>
+        </datalist>
+        </input>
+        </div>
+    </p>
+    <div class="brochure">
+    <p style="text-align: right;">Would you like a <br><span>brochure? </span>
+    </p>
+    <div style="padding: 1.5em 0em 0em 0.5em;">
+    <input type="checkbox" name="Brochure" id="Brochure" >
+    </div>
+    </div>      
+    <div style=" display: flex; justify-content: center; margin-right: 6%;">    
+   <!-- <input type="button" style=" border-radius: 5px; cursor: pointer; font-weight: bold; padding: 0.5em 0.8em;" value="Submit" >-->
+   <input type="submit" value="Submit" style="border-radius: 5px; cursor: pointer;">
+    </div>
+</form>
+</body>
+</html>
